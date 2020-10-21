@@ -33,6 +33,7 @@ const YoutubeIframe = (
     onReady = _event => {},
     playListStartIndex = 0,
     initialPlayerParams = {},
+    embedParams = {},
     allowWebViewZoom = false,
     forceAndroidAutoplay = false,
     onChangeState = _event => {},
@@ -181,6 +182,7 @@ const YoutubeIframe = (
             playList,
             initialPlayerParams,
             allowWebViewZoom,
+            embedParams
           ),
         }}
         userAgent={

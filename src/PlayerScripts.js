@@ -70,6 +70,7 @@ export const MAIN_SCRIPT = (
     start,
   },
   allowWebViewZoom,
+  embedParams
 ) => `<!DOCTYPE html>
 <html>
   <head>
@@ -133,6 +134,7 @@ export const MAIN_SCRIPT = (
             listType:  '${typeof playList === 'string' ? 'playlist' : ''}',
             list: '${typeof playList === 'string' ? playList : ''}',
           },
+          embedConfig: '${JSON.stringify(embedParams)}'
           events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange,
