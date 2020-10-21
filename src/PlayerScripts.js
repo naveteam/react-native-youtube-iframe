@@ -134,7 +134,7 @@ export const MAIN_SCRIPT = (
             listType:  '${typeof playList === 'string' ? 'playlist' : ''}',
             list: '${typeof playList === 'string' ? playList : ''}',
           },
-          embedConfig: '${JSON.stringify(embedParams)}'
+          embedConfig: '${JSON.stringify(embedParams)}',
           events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange,
